@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python PRO Quiz</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Python PRO Quiz</h1>
+        <form action='/quiz', method='POST'>
+            <!-- Get the Username -->
+            <h2>Please Enter Your Name</h2>
+            <input type="text" name="username" required>
+
+            <br>
+            <input type="submit" class="submit-button", name="index_submit", value="Continue">
+        </form>
+    </div>
+
+    <!-- User's best score in the top right corner -->
+    <div class="top-scores">
+        <p>General High Score: <b>{{all_best}}</b></p>
+    </div>
+
+    <!-- Footer with information about the author -->
+    <footer>
+        <p>&copy; Davut Bayık | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

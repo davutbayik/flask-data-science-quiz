@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python PRO Quiz</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Hi {{name}}</h1>
+        <form action='/result', method='POST'>
+            
+            <input type="hidden" name="username" value="{{name}}">
+
+            <!-- Questions -->
+            <div class="question-container">
+                <h2>Q1: Which of the following best describes the purpose of an Intents object in discord.py?</h2>
+                <input type="radio" name="question1" value="A" required>
+                 It defines the bot’s command structure and prefixes for processing user inputs<br>
+                <input type="radio" name="question1" value="B" required>
+                 It controls which events the bot receives from Discord to optimize performance and security<br>
+                <input type="radio" name="question1" value="C" required>
+                 It manages user authentication and permissions within a Discord server<br>
+                <input type="radio" name="question1" value="D" required>
+                 It handles the storage and retrieval of bot-related data using an external database<br>
+            </div>
+
+            <div class="question-container">
+                <h2>Q2: What is the main advantage of Flask over Django in terms of Web development in Python?</h2>
+                <input type="radio" name="question2" value="A" required>
+                 It has minimal setup requirements and easy to learn comparing with Django<br>
+                <input type="radio" name="question2" value="B" required>
+                 Offers user login authentication system<br>
+                <input type="radio" name="question2" value="C" required>
+                 Compatible with common Web development technologies like HTML<br>
+                <input type="radio" name="question2" value="D" required>
+                 It is more flexible than Django for dynamic and multi-page web development<br>
+            </div>
+
+            <div class="question-container">
+                <h2>Q3: Which of the following is a key advantage of using Python for AI development?</h2>
+                <input type="radio" name="question3" value="A" required>
+                 Python’s built-in AI capabilities eliminate the need for external libraries or frameworks<br>
+                <input type="radio" name="question3" value="B" required>
+                 Python offers extensive AI and machine learning libraries, 
+                 a simple syntax, and strong community support, making development more efficient<br>
+                <input type="radio" name="question3" value="C" required>
+                 Python is the only programming language capable of implementing AI models due to its exclusive 
+                 AI-focused features<br>
+                <input type="radio" name="question3" value="D" required>
+                 Python’s execution speed is significantly faster than C++ and Java, making it the 
+                 best choice for high-performance AI applications<br>
+            </div>    
+
+            <div class="question-container">
+                <h2>Q4: Which of the following is a crucial decision criterion when selecting 
+                 a Computer Vision model for an AI application?</h2>
+                <input type="radio" name="question4" value="A" required>
+                 Random Model Selection – Choosing any pre-trained model without considering dataset relevance or 
+                 deployment constraints<br>
+                <input type="radio" name="question4" value="B" required>
+                 Programming Language Used – Prioritizing models developed exclusively 
+                 in Python over other languages<br>
+                <input type="radio" name="question4" value="C" required>
+                 Ignoring Hardware Limitations – Developing a model without considering 
+                 GPU/CPU capabilities or memory constraints<br>
+                <input type="radio" name="question4" value="D" required>
+                 Accuracy vs. Speed Trade-off – Balancing model precision with real-time processing 
+                 requirements based on application needs<br>
+            </div>
+
+            <div class="question-container">
+                <h2>Q5: Which of the following tasks cannot be performed directly with the NLTK library in Python?</h2>
+                <input type="radio" name="question5" value="A" required>
+                 Tokenizing text into words or sentences<br>
+                <input type="radio" name="question5" value="B" required>
+                 Performing part-of-speech tagging and named entity recognition<br>
+                <input type="radio" name="question5" value="C" required>
+                 Performing sentiment analysis using pre-trained models<br>
+                <input type="radio" name="question5" value="D" required>
+                 Building and training custom machine learning models for text classification<br>
+            </div>
+
+            <br>
+            <input type="submit" class="submit-button" name="quiz_submit" value="Submit Answers">
+        </form>
+    </div>
+
+    <!-- User's best score in the top right corner -->
+    <div class="top-scores">
+        <p>User High Score: <b>{{user_best}}</b></p>
+        <p>General High Score: <b>{{all_best}}</b></p>
+    </div>
+
+    <!-- Footer with information about the author -->
+    <footer>
+        <p>&copy; Davut Bayık | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

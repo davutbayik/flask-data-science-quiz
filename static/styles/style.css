@@ -1,0 +1,115 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Verdana, sans-serif;	
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    margin-top: -2%;
+    margin-bottom: 10%;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #999
+}
+
+.quiz-container{
+    margin: 5% auto;
+    width: 95%;
+    height: auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 8px solid;
+    border-top: 8px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container h1{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.quiz-container h2{
+    margin-bottom: 2%;
+}
+
+.quiz-container a{
+    padding: 10px;
+    margin-bottom: -4%;
+}
+
+.quiz-container .home-button{
+    margin: 5% 0;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container form{
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.results{
+    text-align: center;
+    margin: 2%;
+    font-size: 1.5rem;
+}
+
+.question-container{
+    position: relative;
+    margin: 10px;
+    align-items: center;
+}
+
+.question-container h2{
+    margin-bottom: 20px;
+}
+
+.question-container input[type="radio"]{
+    margin: 5px;
+}
+
+.submit-button{
+    padding: 10px;
+    color: white;
+    background: hsl(201, 100%, 35%);
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    align-items: center;
+}
+    
+.submit-button:hover{
+    color: black;
+    background: hsl(201, 100%, 65%);
+    transition: 0.2s ease-in-out;
+}
+
+.submit-button:active{
+    color: black;
+    background: hsl(201, 100%, 85%);
+}
+
+.top-scores{
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+}

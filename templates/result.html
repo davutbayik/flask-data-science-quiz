@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python PRO Quiz</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Test Results For {{name}}</h1>
+        <p class="results">Your Current Test Score is <b>{{quiz_result}}</b><p>
+        <p class="results">Your High Score is <b>{{user_best}}</b><p>
+        <p class="results">General High Score is <b>{{all_best}}</b><p>
+        
+        <div class="home-button">
+            <a href="/" class="submit-button">Go back to Home Page</a>
+        </div>
+    </div>
+
+    <!-- User's best score in the top right corner -->
+    <div class="top-scores">
+        <p>User High Score: <b>{{user_best}}</b></p>
+        <p>General High Score: <b>{{all_best}}</b></p>
+    </div>
+
+    <!-- Footer with information about the author -->
+    <footer>
+        <p>&copy; Davut Bayık | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
