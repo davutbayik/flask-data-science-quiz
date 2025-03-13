@@ -6,6 +6,7 @@
 </head>
 <body>
     <div class="quiz-container">
+        <!-- Write the user name, posting from the previous page -->
         <h1>Hi {{name}}</h1>
         <form action='/result', method='POST'>
             <input type="hidden" name="username" value="{{name}}">

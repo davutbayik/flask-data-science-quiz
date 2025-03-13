@@ -1,3 +1,4 @@
+/* General styling */
 *{
     text-decoration: none;
     list-style-type: none;
@@ -7,6 +8,7 @@
     font-family: 'Segoe UI', Verdana, sans-serif;	
 }
 
+/* Body styling */
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -16,6 +18,7 @@ body {
     padding: 20px;
 }
 
+/* Footer styling */
 footer {
     position: relative;
     text-align: center;
@@ -26,6 +29,7 @@ footer {
     color: #999
 }
 
+<<<<<<< HEAD
 /* Quiz styling */
 
 .question-container {
@@ -101,6 +105,9 @@ input[type="radio"]:focus + label:before {
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
 }
 
+=======
+/* Quiz Page styling */
+>>>>>>> 501b4a1137feb101c61df5b2c69abc88a7846b1a
 .quiz-container{
     margin: 5% auto;
     width: 95%;
@@ -139,12 +146,6 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.results{
-    text-align: center;
-    margin: 2%;
-    font-size: 1.5rem;
 }
 
 .question-container{
@@ -190,6 +191,14 @@ h1{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Results Page styling */
+.results{
+    text-align: center;
+    margin: 2%;
+    font-size: 1.5rem;
+}
+
+/* Upper Right Part styling (user and general high scores) */
 .top-scores{
     position: absolute; 
     top: 10px;
