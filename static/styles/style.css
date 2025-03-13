@@ -11,6 +11,9 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 footer {
@@ -21,6 +24,81 @@ footer {
     font-weight: bold;
     font-size: 0.9rem;
     color: #999
+}
+
+/* Quiz styling */
+
+.question-container {
+    width: 95%;
+    height: auto;
+    max-width: 1000px;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+/* Hide the default radio button but keep it functional */
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+/* Style for the label that will act as our custom radio button */
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* Create a custom radio button appearance */
+input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Style for the selected state */
+input[type="radio"]:checked + label:before {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+/* Add an inner circle to make it look more like a radio button */
+input[type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Add focus styles for accessibility */
+input[type="radio"]:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
 }
 
 .quiz-container{
@@ -36,12 +114,8 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.quiz-container h1{
+h1{
     text-align: center;
-    margin-bottom: 2%;
-}
-
-.quiz-container h2{
     margin-bottom: 2%;
 }
 
@@ -87,29 +161,51 @@ footer {
     margin: 5px;
 }
 
-.submit-button{
-    padding: 10px;
+.submit-button {
+    padding: 12px 24px;
+    background-color: #3498db;
     color: white;
-    background: hsl(201, 100%, 35%);
-    cursor: pointer;
     border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
     font-weight: bold;
-    align-items: center;
-}
-    
-.submit-button:hover{
-    color: black;
-    background: hsl(201, 100%, 65%);
-    transition: 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 200px;
+    text-align: center;
 }
 
-.submit-button:active{
-    color: black;
-    background: hsl(201, 100%, 85%);
+.submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .top-scores{
     position: absolute; 
     top: 10px;
     right: 10px;
+}
+
+footer a{
+    color: #999;
+}
+
+footer a:hover{
+    color: #4d4d4d;
+    cursor: pointer;
+}
+
+footer a:active{
+    color: #4d4d4d;
+    cursor: pointer;
 }

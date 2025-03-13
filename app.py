@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
-CORRECT_ANSWERS = ["B", "A", "B", "D", "C"]
+CORRECT_ANSWERS = ["D", "A", "B", "D", "C", "B", "B", "C", "B", "B", "B", "A", "A", "A", "B", "B", "A", "B", "C", "C"]
 
 def checkAnswers(answer_list):
     
@@ -10,7 +10,7 @@ def checkAnswers(answer_list):
         if user_answer == correct_answer:
             score += (100/len(CORRECT_ANSWERS))
     
-    return score
+    return round(score,2)
 
 app = Flask(__name__)
 

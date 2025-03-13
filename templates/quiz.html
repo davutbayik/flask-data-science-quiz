@@ -1,83 +1,333 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Python PRO Quiz</title>
+    <title>Data Science Quiz</title>
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
 </head>
 <body>
     <div class="quiz-container">
         <h1>Hi {{name}}</h1>
         <form action='/result', method='POST'>
-            
             <input type="hidden" name="username" value="{{name}}">
 
-            <!-- Questions -->
+            <!-- Question 1 -->
             <div class="question-container">
-                <h2>Q1: Which of the following best describes the purpose of an Intents object in discord.py?</h2>
-                <input type="radio" name="question1" value="A" required>
-                 It defines the bot’s command structure and prefixes for processing user inputs<br>
-                <input type="radio" name="question1" value="B" required>
-                 It controls which events the bot receives from Discord to optimize performance and security<br>
-                <input type="radio" name="question1" value="C" required>
-                 It manages user authentication and permissions within a Discord server<br>
-                <input type="radio" name="question1" value="D" required>
-                 It handles the storage and retrieval of bot-related data using an external database<br>
+                <h2>Q1: In Large Language Models (LLMs), what is the primary benefit of using Mixture of Experts (MoE) architectures?</h2>
+                <input type="radio" id="q1a" name="question1" value="A" required>
+                <label for="q1a">They improve training stability by using batch normalization</label><br>
+                
+                <input type="radio" id="q1b" name="question1" value="B" required>
+                <label for="q1b">They reduce the number of layers required for deep learning</label><br>
+                
+                <input type="radio" id="q1c" name="question1" value="C" required>
+                <label for="q1c">They eliminate the need for self-attention mechanisms</label><br>
+                
+                <input type="radio" id="q1d" name="question1" value="D" required>
+                <label for="q1d">They improve efficiency by activating only a subset of model parameters per inference</label>
             </div>
 
+            <!-- Question 2 -->
             <div class="question-container">
                 <h2>Q2: What is the main advantage of Flask over Django in terms of Web development in Python?</h2>
-                <input type="radio" name="question2" value="A" required>
-                 It has minimal setup requirements and easy to learn comparing with Django<br>
-                <input type="radio" name="question2" value="B" required>
-                 Offers user login authentication system<br>
-                <input type="radio" name="question2" value="C" required>
-                 Compatible with common Web development technologies like HTML<br>
-                <input type="radio" name="question2" value="D" required>
-                 It is more flexible than Django for dynamic and multi-page web development<br>
+                <input type="radio" id="q2a" name="question2" value="A" required>
+                <label for="q2a">It has minimal setup requirements and easy to learn comparing with Django</label><br>
+                
+                <input type="radio" id="q2b" name="question2" value="B" required>
+                <label for="q2b">Offers user login authentication system</label><br>
+                
+                <input type="radio" id="q2c" name="question2" value="C" required>
+                <label for="q2c">Compatible with common Web development technologies like HTML</label><br>
+                
+                <input type="radio" id="q2d" name="question2" value="D" required>
+                <label for="q2d">It is more flexible than Django for dynamic and multi-page web development</label>
             </div>
 
+            <!-- Question 3 -->
             <div class="question-container">
                 <h2>Q3: Which of the following is a key advantage of using Python for AI development?</h2>
-                <input type="radio" name="question3" value="A" required>
-                 Python’s built-in AI capabilities eliminate the need for external libraries or frameworks<br>
-                <input type="radio" name="question3" value="B" required>
-                 Python offers extensive AI and machine learning libraries, 
-                 a simple syntax, and strong community support, making development more efficient<br>
-                <input type="radio" name="question3" value="C" required>
-                 Python is the only programming language capable of implementing AI models due to its exclusive 
-                 AI-focused features<br>
-                <input type="radio" name="question3" value="D" required>
-                 Python’s execution speed is significantly faster than C++ and Java, making it the 
-                 best choice for high-performance AI applications<br>
-            </div>    
-
-            <div class="question-container">
-                <h2>Q4: Which of the following is a crucial decision criterion when selecting 
-                 a Computer Vision model for an AI application?</h2>
-                <input type="radio" name="question4" value="A" required>
-                 Random Model Selection – Choosing any pre-trained model without considering dataset relevance or 
-                 deployment constraints<br>
-                <input type="radio" name="question4" value="B" required>
-                 Programming Language Used – Prioritizing models developed exclusively 
-                 in Python over other languages<br>
-                <input type="radio" name="question4" value="C" required>
-                 Ignoring Hardware Limitations – Developing a model without considering 
-                 GPU/CPU capabilities or memory constraints<br>
-                <input type="radio" name="question4" value="D" required>
-                 Accuracy vs. Speed Trade-off – Balancing model precision with real-time processing 
-                 requirements based on application needs<br>
+                <input type="radio" id="q3a" name="question3" value="A" required>
+                <label for="q3a">Python's built-in AI capabilities eliminate the need for external libraries or frameworks</label><br>
+                
+                <input type="radio" id="q3b" name="question3" value="B" required>
+                <label for="q3b">Python offers extensive AI and machine learning libraries, a simple syntax, and strong community support, making development more efficient</label><br>
+                
+                <input type="radio" id="q3c" name="question3" value="C" required>
+                <label for="q3c">Python is the only programming language capable of implementing AI models due to its exclusive AI-focused features</label><br>
+                
+                <input type="radio" id="q3d" name="question3" value="D" required>
+                <label for="q3d">Python's execution speed is significantly faster than C++ and Java, making it the best choice for high-performance AI applications</label>
             </div>
 
+            <!-- Question 4 -->
+            <div class="question-container">
+                <h2>Q4: Which of the following is a crucial decision criterion when selecting a Computer Vision model for an AI application?</h2>
+                <input type="radio" id="q4a" name="question4" value="A" required>
+                <label for="q4a">Random Model Selection – Choosing any pre-trained model without considering dataset relevance or deployment constraints</label><br>
+                
+                <input type="radio" id="q4b" name="question4" value="B" required>
+                <label for="q4b">Programming Language Used – Prioritizing models developed exclusively in Python over other languages</label><br>
+                
+                <input type="radio" id="q4c" name="question4" value="C" required>
+                <label for="q4c">Ignoring Hardware Limitations – Developing a model without considering GPU/CPU capabilities or memory constraints</label><br>
+                
+                <input type="radio" id="q4d" name="question4" value="D" required>
+                <label for="q4d">Accuracy vs. Speed Trade-off – Balancing model precision with real-time processing requirements based on application needs</label>
+            </div>
+
+            <!-- Question 5 -->
             <div class="question-container">
                 <h2>Q5: Which of the following tasks cannot be performed directly with the NLTK library in Python?</h2>
-                <input type="radio" name="question5" value="A" required>
-                 Tokenizing text into words or sentences<br>
-                <input type="radio" name="question5" value="B" required>
-                 Performing part-of-speech tagging and named entity recognition<br>
-                <input type="radio" name="question5" value="C" required>
-                 Performing sentiment analysis using pre-trained models<br>
-                <input type="radio" name="question5" value="D" required>
-                 Building and training custom machine learning models for text classification<br>
+                <input type="radio" id="q5a" name="question5" value="A" required>
+                <label for="q5a">Tokenizing text into words or sentences</label><br>
+                
+                <input type="radio" id="q5b" name="question5" value="B" required>
+                <label for="q5b">Performing part-of-speech tagging and named entity recognition</label><br>
+                
+                <input type="radio" id="q5c" name="question5" value="C" required>
+                <label for="q5c">Performing sentiment analysis using pre-trained models</label><br>
+                
+                <input type="radio" id="q5d" name="question5" value="D" required>
+                <label for="q5d">Building and training custom machine learning models for text classification</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question-container">
+                <h2>Q6: Which optimization algorithm is commonly used for training deep neural networks and helps mitigate vanishing gradients?</h2>
+                <input type="radio" id="q6a" name="question6" value="A" required>
+                <label for="q6a">Stochastic Gradient Descent (SGD)</label><br>
+                
+                <input type="radio" id="q6b" name="question6" value="B" required>
+                <label for="q6b">Adam</label><br>
+                
+                <input type="radio" id="q6c" name="question6" value="C" required>
+                <label for="q6c">Newton's Method</label><br>
+                
+                <input type="radio" id="q6d" name="question6" value="D" required>
+                <label for="q6d">K-Nearest Neighbors (KNN)</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question-container">
+                <h2>Q7: In the Transformer architecture, what is the primary role of the self-attention mechanism?</h2>
+                <input type="radio" id="q7a" name="question7" value="A" required>
+                <label for="q7a">Reduce computational complexity</label><br>
+                
+                <input type="radio" id="q7b" name="question7" value="B" required>
+                <label for="q7b">Capture long-range dependencies between words</label><br>
+                
+                <input type="radio" id="q7c" name="question7" value="C" required>
+                <label for="q7c">Perform dimensionality reduction</label><br>
+                
+                <input type="radio" id="q7d" name="question7" value="D" required>
+                <label for="q7d">Convert words into one-hot vectors</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question-container">
+                <h2>Q8: Which of the following is NOT a common way to prevent overfitting in deep learning?</h2>
+                <input type="radio" id="q8a" name="question8" value="A" required>
+                <label for="q8a">Dropout</label><br>
+                
+                <input type="radio" id="q8b" name="question8" value="B" required>
+                <label for="q8b">L2 Regularization</label><br>
+                
+                <input type="radio" id="q8c" name="question8" value="C" required>
+                <label for="q8c">Increasing model complexity</label><br>
+                
+                <input type="radio" id="q8d" name="question8" value="D" required>
+                <label for="q8d">Data augmentation</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question-container">
+                <h2>Q9: What does the term "LLM alignment" refer to in AI safety?</h2>
+                <input type="radio" id="q9a" name="question9" value="A" required>
+                <label for="q9a">Fine-tuning a model for higher accuracy</label><br>
+                
+                <input type="radio" id="q9b" name="question9" value="B" required>
+                <label for="q9b">Ensuring the model behaves according to human intentions and ethics</label><br>
+                
+                <input type="radio" id="q9c" name="question9" value="C" required>
+                <label for="q9c">Using reinforcement learning to improve training</label><br>
+                
+                <input type="radio" id="q9d" name="question9" value="D" required>
+                <label for="q9d">Optimizing hyperparameters for language tasks</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question-container">
+                <h2>Q10: In Bayesian machine learning, what does the prior distribution represent?</h2>
+                <input type="radio" id="q10a" name="question10" value="A" required>
+                <label for="q10a">The distribution of data points after training</label><br>
+                
+                <input type="radio" id="q10b" name="question10" value="B" required>
+                <label for="q10b">The initial belief about parameters before observing data</label><br>
+                
+                <input type="radio" id="q10c" name="question10" value="C" required>
+                <label for="q10c">The likelihood of new data given a trained model</label><br>
+                
+                <input type="radio" id="q10d" name="question10" value="D" required>
+                <label for="q10d">The final probability distribution after applying Bayes' theorem</label>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question-container">
+                <h2>Q11: In a high-dimensional dataset, what problem does the Curse of Dimensionality refer to?</h2>
+                <input type="radio" id="q11a" name="question11" value="A" required>
+                <label for="q11a">More features always improve performance</label><br>
+                
+                <input type="radio" id="q11b" name="question11" value="B" required>
+                <label for="q11b">Increasing dimensions makes distances between points less meaningful</label><br>
+                
+                <input type="radio" id="q11c" name="question11" value="C" required>
+                <label for="q11c">Deep learning models perform better in high-dimensional spaces</label><br>
+                
+                <input type="radio" id="q11d" name="question11" value="D" required>
+                <label for="q11d">The need for more training epochs as dimensions increase</label>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question-container">
+                <h2>Q12: What is a key difference between Reinforcement Learning (RL) and Supervised Learning?</h2>
+                <input type="radio" id="q12a" name="question12" value="A" required>
+                <label for="q12a">RL does not require a labeled dataset</label><br>
+                
+                <input type="radio" id="q12b" name="question12" value="B" required>
+                <label for="q12b">RL minimizes loss functions like cross-entropy</label><br>
+                
+                <input type="radio" id="q12c" name="question12" value="C" required>
+                <label for="q12c">RL uses static datasets while Supervised Learning continuously updates</label><br>
+                
+                <input type="radio" id="q12d" name="question12" value="D" required>
+                <label for="q12d">RL only works for robotic control tasks</label>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question-container">
+                <h2>Q13: What is the primary advantage of using LoRA (Low-Rank Adaptation) in fine-tuning Large Language Models?</h2>
+                <input type="radio" id="q13a" name="question13" value="A" required>
+                <label for="q13a">It allows fine-tuning with significantly fewer trainable parameters</label><br>
+                
+                <input type="radio" id="q13b" name="question13" value="B" required>
+                <label for="q13b">It completely replaces the transformer layers</label><br>
+                
+                <input type="radio" id="q13c" name="question13" value="C" required>
+                <label for="q13c">It increases inference speed by reducing model size</label><br>
+                
+                <input type="radio" id="q13d" name="question13" value="D" required>
+                <label for="q13d">It improves zero-shot learning performance</label>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question-container">
+                <h2>Q14: What is the key reason behind the efficiency of FlashAttention in LLMs?</h2>
+                <input type="radio" id="q14a" name="question14" value="A" required>
+                <label for="q14a">It reduces memory access overhead by optimizing matrix multiplications</label><br>
+                
+                <input type="radio" id="q14b" name="question14" value="B" required>
+                <label for="q14b">It replaces attention heads with simpler linear layers</label><br>
+                
+                <input type="radio" id="q14c" name="question14" value="C" required>
+                <label for="q14c">It increases token throughput by compressing input embeddings</label><br>
+                
+                <input type="radio" id="q14d" name="question14" value="D" required>
+                <label for="q14d">It converts all transformer layers into convolutional layers</label>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question-container">
+                <h2>Q15: In contrastive learning for self-supervised models, what is the main idea behind negative samples?</h2>
+                <input type="radio" id="q15a" name="question15" value="A" required>
+                <label for="q15a">They are additional labels assigned during supervised training</label><br>
+                
+                <input type="radio" id="q15b" name="question15" value="B" required>
+                <label for="q15b">They help the model differentiate between similar and dissimilar representations</label><br>
+                
+                <input type="radio" id="q15c" name="question15" value="C" required>
+                <label for="q15c">They improve generalization by removing redundant features</label><br>
+                
+                <input type="radio" id="q15d" name="question15" value="D" required>
+                <label for="q15d">They are used only in generative models like GANs</label>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question-container">
+                <h2>Q16: Question 1: When using K-Fold Cross-Validation, what is the main advantage compared to a simple train-test split?</h2>
+                <input type="radio" id="q16a" name="question16" value="A" required>
+                <label for="q16a">It eliminates the need for a separate validation set</label><br>
+                
+                <input type="radio" id="q16b" name="question16" value="B" required>
+                <label for="q16b">It provides a more robust estimate of model performance by using multiple train-test splits</label><br>
+                
+                <input type="radio" id="q16c" name="question16" value="C" required>
+                <label for="q16c">It guarantees that the model will never overfit to the training data</label><br>
+                
+                <input type="radio" id="q16d" name="question16" value="D" required>
+                <label for="q16d">It automatically tunes hyperparameters without additional computation</label>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question-container">
+                <h2>Q17: Which of the following statements about L1 (Lasso) and L2 (Ridge) regularization is <b>true?</b></h2>
+                <input type="radio" id="q17a" name="question17" value="A" required>
+                <label for="q17a">L1 regularization tends to produce sparse models while L2 regularization does not</label><br>
+                
+                <input type="radio" id="q17b" name="question17" value="B" required>
+                <label for="q17b">L2 regularization is always superior to L1 for preventing overfitting</label><br>
+                
+                <input type="radio" id="q17c" name="question17" value="C" required>
+                <label for="q17c">L1 regularization adds the square of the weights to the loss function</label><br>
+                
+                <input type="radio" id="q17d" name="question17" value="D" required>
+                <label for="q17d">Both L1 and L2 regularization increase model complexity</label>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question-container">
+                <h2>Q18: In a neural network using backpropagation, what problem does the vanishing gradient issue cause?</h2>
+                <input type="radio" id="q18a" name="question18" value="A" required>
+                <label for="q18a">The model learns too quickly and overshoots the optimal weights</label><br>
+                
+                <input type="radio" id="q18b" name="question18" value="B" required>
+                <label for="q18b">Earlier layers learn more slowly than later layers because gradients become extremely small</label><br>
+                
+                <input type="radio" id="q18c" name="question18" value="C" required>
+                <label for="q18c">The model requires more GPU memory during training</label><br>
+                
+                <input type="radio" id="q18d" name="question18" value="D" required>
+                <label for="q18d">The model produces inconsistent predictions for similar inputs</label>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question-container">
+                <h2>Q19: Which of the following techniques is <b>not</b> typically used to handle imbalanced datasets?</h2>
+                <input type="radio" id="q19a" name="question19" value="A" required>
+                <label for="q19a">Oversampling the minority class</label><br>
+                
+                <input type="radio" id="q19b" name="question19" value="B" required>
+                <label for="q19b">Undersampling the majority class</label><br>
+                
+                <input type="radio" id="q19c" name="question19" value="C" required>
+                <label for="q19c">Normalizing feature values to be between 0 and 1</label><br>
+                
+                <input type="radio" id="q19d" name="question19" value="D" required>
+                <label for="q19d">Using class weights in the loss function</label>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question-container">
+                <h2>Q20: Which of the following ensemble methods combines multiple models by having them vote on the final prediction, with each model trained on a random subset of the training data?</h2>
+                <input type="radio" id="q20a" name="question20" value="A" required>
+                <label for="q20a">Gradient Boosting</label><br>
+                
+                <input type="radio" id="q20b" name="question20" value="B" required>
+                <label for="q20b">AdaBoost</label><br>
+                
+                <input type="radio" id="q20c" name="question20" value="C" required>
+                <label for="q20c">Random Forest</label><br>
+                
+                <input type="radio" id="q20d" name="question20" value="D" required>
+                <label for="q20d">Stacking</label>
             </div>
 
             <br>
@@ -93,7 +343,7 @@
 
     <!-- Footer with information about the author -->
     <footer>
-        <p>&copy; Davut Bayık | All Rights Reserved.</p>
+        <p><a href="https://www.linkedin.com/in/davutbayik/", target="_blank">&copy; Davut Bayık</a> | All Rights Reserved.</p>
     </footer>
 </body>
 </html>
