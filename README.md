@@ -1,1 +1,1 @@
-[Live Demo](https://davutbayik.pythonanywhere.com/).
+[Live Demo](https://davutbayik.pythonanywhere.com/)
