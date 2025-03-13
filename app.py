@@ -2,12 +2,8 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
-<<<<<<< HEAD
-CORRECT_ANSWERS = ["D", "A", "B", "D", "C", "B", "B", "C", "B", "B", "B", "A", "A", "A", "B", "B", "A", "B", "C", "C"]
-=======
 #Answer key of the test
-CORRECT_ANSWERS = ["B", "A", "B", "D", "C"]
->>>>>>> 501b4a1137feb101c61df5b2c69abc88a7846b1a
+CORRECT_ANSWERS = ["D", "A", "B", "D", "C", "B", "B", "C", "B", "B", "B", "A", "A", "A", "B", "B", "A", "B", "C", "C"]
 
 def checkAnswers(answer_list):
     
