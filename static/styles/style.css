@@ -29,9 +29,8 @@ footer {
     color: #999
 }
 
-<<<<<<< HEAD
-/* Quiz styling */
 
+/* Quiz styling */
 .question-container {
     width: 95%;
     height: auto;
@@ -105,9 +104,7 @@ input[type="radio"]:focus + label:before {
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
 }
 
-=======
 /* Quiz Page styling */
->>>>>>> 501b4a1137feb101c61df5b2c69abc88a7846b1a
 .quiz-container{
     margin: 5% auto;
     width: 95%;
@@ -162,6 +159,7 @@ h1{
     margin: 5px;
 }
 
+/* Submit button styling */
 .submit-button {
     padding: 12px 24px;
     background-color: #3498db;
@@ -205,6 +203,7 @@ h1{
     right: 10px;
 }
 
+/* Footer linkedin styling */
 footer a{
     color: #999;
 }

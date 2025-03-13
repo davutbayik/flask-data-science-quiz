@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
-#Answer key of the test
+#Correct answers of the test
 CORRECT_ANSWERS = ["D", "A", "B", "D", "C", "B", "B", "C", "B", "B", "B", "A", "A", "A", "B", "B", "A", "B", "C", "C"]
 
 def checkAnswers(answer_list):
