@@ -7,7 +7,7 @@
 
 A multi-page web application built with Flask that challenges users with 20 questions covering Python, Data Science, Machine Learning, and Artificial Intelligence. The app tracks personal and global high scores using SQLAlchemy.
 
-👉 [Live Demo](https://davutbayik.pythonanywhere.com/)
+👉 [Live App](https://davutbayik.pythonanywhere.com/)
 
 ---
 
