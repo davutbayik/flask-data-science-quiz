@@ -13,7 +13,7 @@ A multi-page web application built with Flask that challenges users with 5 quest
 
 ## ✨ Features
 
-- 🧠 **5 curated questions** on Python, Data Science, Machine Learning, and AI.
+- 🧠 **5 curated questions** on Data Science and AI.
 - 🧩 **Multi-page quiz flow** with intuitive navigation.
 - 🏆 **Score tracking**: personal and global high scores stored in a database.
 - 💡 **Flask backend** with SQLAlchemy for ORM.
