@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Made with love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
 
-A multi-page web application built with Flask that challenges users with 20 questions covering Python, Data Science, Machine Learning, and Artificial Intelligence. The app tracks personal and global high scores using SQLAlchemy.
+A multi-page web application built with Flask that challenges users with 5 questions covering Data Science and Artificial Intelligence. The app tracks personal and global high scores using SQLAlchemy.
 
 👉 [Live App](https://davutbayik.pythonanywhere.com/)
 
@@ -13,7 +13,7 @@ A multi-page web application built with Flask that challenges users with 20 ques
 
 ## ✨ Features
 
-- 🧠 **20 curated questions** on Python, Data Science, Machine Learning, and AI.
+- 🧠 **5 curated questions** on Python, Data Science, Machine Learning, and AI.
 - 🧩 **Multi-page quiz flow** with intuitive navigation.
 - 🏆 **Score tracking**: personal and global high scores stored in a database.
 - 💡 **Flask backend** with SQLAlchemy for ORM.
