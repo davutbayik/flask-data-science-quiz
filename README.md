@@ -62,7 +62,7 @@ Open your browser and navigate to ```http://127.0.0.1:5000/```
 - **Jinja2** – Template engine integrated with Flask for dynamic HTML rendering.
 - **PythonAnywhere** – Platform used for deploying the web app.
 
-## Example Demo
+## 🎥 Example Demo
 
 
 https://github.com/user-attachments/assets/34359403-3bfd-4c0f-a914-4dd7358e8020
